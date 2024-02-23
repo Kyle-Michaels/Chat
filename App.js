@@ -14,6 +14,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 // Import Firebase
 import { initializeApp } from 'firebase/app';
 import { getFirestore, disableNetwork, enableNetwork } from 'firebase/firestore';
+import { getStorage } from "firebase/storage";
 
 // Ignore warningmessage
 LogBox.ignoreLogs(['@firebase/auth: Auth (10.3.1):']);
@@ -34,6 +35,7 @@ const App = () => {
   // Initialize firebase and get a reference to database
   const app = initializeApp(firebaseConfig);
   const db = getFirestore(app);
+  const storage = getStorage(app);
 
   // Define a new state for network connectivity
   const connectionStatus = useNetInfo();
@@ -59,7 +61,14 @@ const App = () => {
         <Stack.Screen
           name='Chat'
         >
-          {props => <Chat isConnected={connectionStatus.isConnected} db={db} {...props} />}
+          {props =>
+            <Chat
+              isConnected={connectionStatus.isConnected}
+              db={db}
+              storage={storage}
+              {...props}
+            />
+          }
         </Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
