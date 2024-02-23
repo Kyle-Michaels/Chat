@@ -25,3 +25,30 @@ location
     <li>Press the 'Start Chatting' button</li>
     <li>Send messages, images, or your location from the text input field.</li>
   </ul>
+<hr>
+<h2>Technologies</h2>
+  <ul>
+    <li>React</li>
+    <li>React-Native
+      <ul>
+        <li>Navigation</li>
+        <li>NetInfo</li>
+        <li>Stack</li>
+        <li>Maps</li>
+        <li>GiftedChat</li>
+        <li>AsyncStorage</li>
+      </ul>
+    </li>
+    <li>Expo</li>
+      <ul>
+        <li>Location</li>
+        <li>ImagePicker</li>
+        <li>React-Native-Action-Sheet</li>
+      </ul>
+    <li>Google Firebase</li>
+      <ul>
+        <li>FireStore Database</li>
+        <li>Authentication</li>
+        <li>Storage</li>
+      </ul>
+  </ul>
