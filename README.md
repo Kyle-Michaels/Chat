@@ -1,4 +1,4 @@
-![preview](https://github.com/Kyle-Michaels/chat/blob/main/chat.jpg?raw=true)
+![preview](https://github.com/Kyle-Michaels/chat/blob/main/chat1.jpg?raw=true)
 <h1>Chat</h1>
   <p>
     Chat is a mobile messaging app that allows users to send messages, images, and their location in a chat room.
